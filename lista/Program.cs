@@ -1,4 +1,4 @@
-﻿List<int> numbers = new List<int> {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+﻿var numbers = Enumerable.Range(1, 100).ToList();
 
 for (int i = 0; i < numbers.Count; i++)
 {
@@ -7,6 +7,7 @@ for (int i = 0; i < numbers.Count; i++)
         Console.WriteLine(numbers[i]);
     }
 }
+Console.WriteLine("End of for");
 
 foreach (int number in numbers)
 {
@@ -15,3 +16,4 @@ foreach (int number in numbers)
         Console.WriteLine(number); 
     }
 }
+Console.WriteLine("End of foreach");
